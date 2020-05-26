@@ -4,9 +4,11 @@ import cn.itcast.domain.Company;
 import cn.itcast.service.CompanyService;
 import cn.itcast.utils.UtilFuns;
 import cn.itcast.web.controller.basecontroller.BaseController;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.UUID;
@@ -19,12 +21,21 @@ public class CompanyController extends BaseController{
     private CompanyService companyService;
 
 
-    @RequestMapping(value = "/list",name = "企业列表查询")
+   /* @RequestMapping(value = "/list",name = "企业列表查询")
     public String findAll(){
         List<Company> list = companyService.findAll();
         request.setAttribute("list",list);
         return "company/company-list";
-    }
+    }*/
+   //pageHelper插件的分页方式
+   //pageHelper插件的分页方式
+   @RequestMapping(value = "/list",name = "企业列表查询")
+   public String findAll(@RequestParam(defaultValue = "1") int pageNum, @RequestParam(defaultValue = "4") int pageSize){
+       PageInfo page = companyService.findPage(pageNum, pageSize);
+       request.setAttribute("page",page);
+       return "company/company-list";
+   }
+
 
 
     @RequestMapping(value = "/toAdd",name = "跳转到企业的添加页面")
@@ -34,13 +45,13 @@ public class CompanyController extends BaseController{
 
 
     /*
-    *  1 将页面数据封装给对象
-    *               手动设置id为uuid(为了让主键唯一)
-    *  2 传递封装好的对象到数据库中
-    *  3 重定向到查询方法list中带最新数据到页面展示
-    *
-    *
-    * */
+     *  1 将页面数据封装给对象
+     *               手动设置id为uuid(为了让主键唯一)
+     *  2 传递封装好的对象到数据库中
+     *  3 重定向到查询方法list中带最新数据到页面展示
+     *
+     *
+     * */
     @RequestMapping(value = "/edit",name = "添加/修改企业信息")
     public String edit(Company company){
         if(UtilFuns.isEmpty(company.getId())){
@@ -57,9 +68,9 @@ public class CompanyController extends BaseController{
 
 
     /*
-    *  1 接受点击信息的id,去数据库查询该数据的所有内容
-    *  2 带着内容去修改页面回显
-    * */
+     *  1 接受点击信息的id,去数据库查询该数据的所有内容
+     *  2 带着内容去修改页面回显
+     * */
     @RequestMapping(value = "/toUpdate",name = "带着数据到修改页面回显")
     public String toUpdate(String id){
         Company company=companyService.findById(id);

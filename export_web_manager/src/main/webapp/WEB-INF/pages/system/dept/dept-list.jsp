@@ -102,7 +102,7 @@
         </div>
         <div class="box-footer">
             <jsp:include page="../../common/page.jsp">
-                <jsp:param value="${ctx}/system/dept/list.do" name="pageUrl"/>
+                <jsp:param value="/system/dept/list.do" name="pageUrl"/>
             </jsp:include>
         </div>
     </div>

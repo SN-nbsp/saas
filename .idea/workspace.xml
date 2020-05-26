@@ -11,6 +11,10 @@
       <change afterPath="$PROJECT_DIR$/export_common/target/classes/cn/itcast/utils/UtilFuns.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_common/target/export_common-1.0-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/dept/DeptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/module/ModuleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/role/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/user/UserDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_dao/target/classes/cn/itcast/dao/company/CompanyDao.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_dao/target/classes/cn/itcast/dao/company/CompanyDao.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_dao/target/classes/properties/db.properties" afterDir="false" />
@@ -20,12 +24,25 @@
       <change afterPath="$PROJECT_DIR$/export_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_domain/target/classes/cn/itcast/domain/Company.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_domain/target/export_domain-1.0-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_domain/target/maven-archiver/pom.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/ModuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/ModuleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/UserServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_service_system/target/classes/cn/itcast/service/CompanyService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_service_system/target/classes/cn/itcast/service/impl/CompanyServiceImpl.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_service_system/target/classes/spring/applicationContext-tx.xml" afterDir="false" />
@@ -34,6 +51,10 @@
       <change afterPath="$PROJECT_DIR$/export_service_system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_service_system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_service_system/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/dept/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/module/ModuleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/role/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/user/UserController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_web_manager/target/classes/cn/itcast/converter/StringToDateConverter.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_web_manager/target/classes/cn/itcast/exception/MyException.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_web_manager/target/classes/cn/itcast/web/controller/basecontroller/BaseController.class" afterDir="false" />
@@ -1214,6 +1235,25 @@
       <change afterPath="$PROJECT_DIR$/export_web_manager/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/export_web_manager/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/company/CompanyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/company/CompanyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_dao/src/main/resources/cn/itcast/dao/company/CompanyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/export_dao/src/main/resources/cn/itcast/dao/company/CompanyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_dao/src/main/resources/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/export_dao/src/main/resources/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/basecontroller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/basecontroller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/company/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/company/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/common/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/common/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/dept/dept-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/dept/dept-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/module/module-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/module/module-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/module/module-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/module/module-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/module/module-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/module/module-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/role/role-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/role/role-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/role/role-module.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/role/role-module.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/user/user-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/user/user-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/user/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/system/user/user-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_web_manager/target/export_web_manager-1.0-SNAPSHOT/WEB-INF/pages/system/role/role-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/export_web_manager/target/export_web_manager-1.0-SNAPSHOT/WEB-INF/pages/system/role/role-list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1224,11 +1264,19 @@
     <ignored path="$PROJECT_DIR$/export_domain/target/" />
     <ignored mask="*.iml" />
     <ignored path="target/" />
+    <ignored path="export_dao/target/" />
+    <ignored path="export_common/target/" />
+    <ignored path="export_domain/target/" />
+    <ignored path="export_service_system/target/" />
+    <ignored path="export_web_manager/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="108" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -1236,56 +1284,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/paypal.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/company/CompanyController.java">
+        <entry file="file://$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/dept/DeptDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#911#912#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="112">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_common/pom.xml">
+        <entry file="file://$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/Module.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/DeptService.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/DeptServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/dept/DeptController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="-1412">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_common/src/main/java/cn/itcast/utils/UtilFuns.java">
+        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/basecontroller/BaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6412">
-              <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+            <state relative-caret-position="254">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/export_domain/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/cargo/export/export-contractList.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -1294,25 +1334,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/aside.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/login/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1326,11 +1355,19 @@
         <option value="$PROJECT_DIR$/export_web_manager/pom.xml" />
         <option value="$PROJECT_DIR$/export_common/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/CompanyService.java" />
-        <option value="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/CompanyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/company/CompanyDao.java" />
-        <option value="$PROJECT_DIR$/export_dao/src/main/resources/cn/itcast/dao/company/CompanyDao.xml" />
         <option value="$PROJECT_DIR$/export_common/pom.xml" />
+        <option value="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-add.jsp" />
+        <option value="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/CompanyService.java" />
+        <option value="$PROJECT_DIR$/export_dao/src/main/resources/cn/itcast/dao/company/CompanyDao.xml" />
+        <option value="$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/company/CompanyDao.java" />
+        <option value="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/company/CompanyController.java" />
+        <option value="$PROJECT_DIR$/export_service_system/src/test/java/sg.java" />
+        <option value="$PROJECT_DIR$/export_service_system/src/test/java/a.java" />
+        <option value="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-list.jsp" />
+        <option value="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/common/page.jsp" />
+        <option value="$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/CompanyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/export_dao/src/main/resources/spring/applicationContext-dao.xml" />
+        <option value="$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/basecontroller/BaseController.java" />
       </list>
     </option>
   </component>
@@ -1375,10 +1412,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="y" value="-10" />
-    <option name="width" value="979" />
-    <option name="height" value="1049" />
+    <option name="x" value="951" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1397,7 +1434,45 @@
             <path>
               <item name="export_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="export_parent" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="export_web_manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="export_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="export_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="export_web_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="export_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="export_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="export_web_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="export_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="export_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="export_web_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="export_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="export_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="export_web_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="itcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="export_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="export_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="export_web_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1411,18 +1486,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Develop\workspace\export_parent\export_dao\src\main\java\cn\itcast\dao\dept" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Develop\workspace\export_parent\export_web_manager\src\main\webapp" />
-      <recent name="E:\Develop\workspace\export_parent\export_web_manager\src\main" />
+      <recent name="E:\Develop\workspace\export_parent\export_web_manager\src\main\webapp\WEB-INF" />
+      <recent name="E:\Develop\workspace\export_parent\export_web_manager\src\main\java\cn\itcast\web\controller" />
+      <recent name="E:\Develop\workspace\export_parent\export_service_system\src\main\java\cn\itcast\service\impl" />
+      <recent name="E:\Develop\workspace\export_parent\export_service_system\src\main\java\cn\itcast\service" />
+      <recent name="E:\Develop\workspace\export_parent\export_domain\src\main\java\cn\itcast\domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1596,7 +1677,7 @@
       <updated>1590125861172</updated>
       <workItem from="1590125862712" duration="3526000" />
       <workItem from="1590129613290" duration="8882000" />
-      <workItem from="1590365861430" duration="1419000" />
+      <workItem from="1590365861430" duration="26550000" />
     </task>
     <task id="LOCAL-00001" summary="saasDay02上">
       <created>1590163192640</created>
@@ -1626,16 +1707,24 @@
       <option name="project" value="LOCAL" />
       <updated>1590367869493</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="saasDay02下">
+      <created>1590374329037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590374329037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13827000" />
+    <option name="totallyTimeSpent" value="38958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24739583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1644,9 +1733,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41208792" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917696" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.041208792" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3543956" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40796703" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1655,14 +1744,15 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.24965706" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.5192308" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.041208792" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.5011655" side_tool="true" weight="0.17903645" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14713542" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.4988345" visible="true" weight="0.11783854" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -1673,138 +1763,105 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="saasDay02" />
     <MESSAGE value="saasDay02上" />
-    <MESSAGE value="saasDay02下" />
     <MESSAGE value="saasDay02下三" />
     <MESSAGE value="saasDay02父id" />
-    <option name="LAST_COMMIT_MESSAGE" value="saasDay02父id" />
+    <MESSAGE value="saasDay02下" />
+    <option name="LAST_COMMIT_MESSAGE" value="saasDay02下" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/export_parent$tomcat.ic" NAME="tomcat Coverage Results" MODIFIED="1590473646181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/export_dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_common/src/main/resources/spring/applicationContext-dao.xml" />
-    <entry file="file://$PROJECT_DIR$/export_common/src/main/resources/properties/db.properties" />
-    <entry file="file://$PROJECT_DIR$/export_common/src/main/resources/cn/itcast/dao/company/CompanyDao.xml" />
-    <entry file="file://$PROJECT_DIR$/export_web_manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/converter/StringToDateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/exception/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_service_system/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/resources/spring/applicationContext-tx.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1624">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/CompanyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/CompanyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/company/CompanyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_dao/src/main/resources/cn/itcast/dao/company/CompanyDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/avatar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/american-express.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/avatar2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/avatar04.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1829,13 +1886,6 @@
     <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/user1-128x128.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="7602" column="13" selection-start-line="7602" selection-start-column="13" selection-end-line="7602" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1852,17 +1902,23 @@
     <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/make/xlsprint/logo.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/paypal.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/cargo/export/export-contractList.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/company/CompanyController.java">
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/aside.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_domain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1873,27 +1929,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_common/src/main/java/cn/itcast/utils/UtilFuns.java">
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/img/paypal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6412">
-          <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+        <state relative-caret-position="336">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/cargo/export/export-contractList.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/home.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
+        <state relative-caret-position="233">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/aside.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="840">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/plugins/adminLTE/css/alt/AdminLTE-without-plugins.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6671">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1904,10 +1967,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export_domain/pom.xml">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="28">
+          <caret line="4536" column="4" selection-start-line="4536" selection-start-column="4" selection-end-line="4536" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/resources/spring/applicationContext-tx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_common/src/main/java/cn/itcast/utils/UtilFuns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/test/java/sg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#160#168#0" expanded="true" />
+            <element signature="e#213#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/test/java/a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#138#146#0" expanded="true" />
+            <element signature="e#216#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1959">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/context/support/ContextExposingHttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/ServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="434" column="16" selection-start-line="434" selection-start-column="16" selection-end-line="434" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/base.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/company/company-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="156" column="34" selection-start-line="156" selection-start-column="34" selection-end-line="156" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/common/page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/company/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/CompanyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/CompanyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/company/CompanyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_dao/src/main/resources/cn/itcast/dao/company/CompanyDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2734">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_dao/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+          <folding>
+            <element signature="e#1328#1346#0" expanded="true" />
+            <element signature="e#1399#1417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_dao/src/main/java/cn/itcast/dao/dept/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_domain/src/main/java/cn/itcast/domain/Module.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_service_system/src/main/java/cn/itcast/service/impl/DeptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/dept/DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1412">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/java/cn/itcast/web/controller/basecontroller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export_web_manager/src/main/webapp/WEB-INF/pages/home/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -1961,7 +2230,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>export_common</last-edited>
+          <last-edited>export_service_system</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

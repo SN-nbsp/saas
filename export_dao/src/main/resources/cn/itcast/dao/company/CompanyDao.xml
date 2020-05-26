@@ -60,4 +60,18 @@
     <delete id="deleteById" parameterType="string">
             delete from ss_company where id=#{id}
         </delete>
+
+    <!--分页查询-->
+    <select id="findList" resultMap="companyResultMap" parameterType="map">
+            select * from ss_company limit #{start},#{pageSize}
+        </select>
+    <!--分页总条数-->
+    <select id="findCount" resultType="int">
+            select count(*) from ss_company
+        </select>
+
+    <!--pageHelper插件的数据查询-->
+    <select id="findPageList" resultMap="companyResultMap">
+            select * from ss_company
+        </select>
 </mapper>

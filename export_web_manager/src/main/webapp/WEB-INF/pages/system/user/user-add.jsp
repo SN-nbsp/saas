@@ -52,7 +52,7 @@
                         <select class="form-control" onchange="document.getElementById('deptName').value=this.options[this.selectedIndex].text" name="deptId">
                             <option value="">请选择</option>
                             <c:forEach items="${deptList}" var="item">
-                                <option ${user.deptId == item.id ?'selected':''} value="${item.id}">${item.deptName}</option>
+                                <option value="${item.id}">${item.deptName}</option>
                             </c:forEach>
                         </select>
                     </div>
