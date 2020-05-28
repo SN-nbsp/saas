@@ -1,11 +1,14 @@
 package cn.itcast.web.controller.user;
 
 import cn.itcast.domain.Dept;
+import cn.itcast.domain.Role;
 import cn.itcast.domain.User;
 import cn.itcast.service.DeptService;
+import cn.itcast.service.RoleService;
 import cn.itcast.service.UserService;
+import cn.itcast.utils.Encrypt;
 import cn.itcast.utils.UtilFuns;
-import cn.itcast.web.controller.basecontroller.BaseController;
+import cn.itcast.web.controller.BaseController;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,33 +28,40 @@ public class UserController extends BaseController{
     @Autowired
     private DeptService deptService;
 
+    @Autowired
+    private RoleService roleService;
+
     @RequestMapping(value = "/list",name = "用户查询")
     public String findPageAll(@RequestParam(defaultValue = "1") int pageNum, @RequestParam(defaultValue = "4")int pageSize){
         PageInfo page = userService.findPageAll(pageNum, pageSize, companyId);
         request.setAttribute("page",page);
         //到展示页面
+
         return "system/user/user-list";
     }
-
 
     @RequestMapping(value = "/toAdd",name = "用户新建页面")
     public String toAdd(){
         List<Dept> deptList = deptService.findAllDept(companyId);
         request.setAttribute("deptList",deptList);
         //带着所有部门到页面
+
         return "system/user/user-add";
     }
 
     @RequestMapping(value = "/edit",name = "用户新增")
     public String edit(User user){
-
         user.setCompanyId(companyId);
         user.setCompanyName(companyName);
+        //对密码进行加盐加密
+        user.setPassword(Encrypt.md5(user.getPassword(),user.getEmail()));
         if(UtilFuns.isEmpty(user.getId())){
             user.setId(UUID.randomUUID().toString().replace("-",""));
             userService.save(user);
+
         }else{
             userService.update(user);
+
         }
 
         //到查询
@@ -81,4 +91,36 @@ public class UserController extends BaseController{
     }
 
 
+    // 用户分配角色页面展示
+    @RequestMapping(value = "/roleList",name = "用户分配角色页面展示")
+    public String roleList(String id){
+
+        //1 根据id查询用户
+        User user = userService.findById(id);
+        //2 根据企业id查询所有企业角色
+        List<Role> roleList=roleService.findAllRole(companyId);
+        //3 根据用户获取该用户所具备的角色
+        List<Role> userRoleList=roleService.findByUserRole(user.getId());
+        //4 将查询的用户角色的id进行字符串拼接
+        String roleStr="";
+        for (Role role : userRoleList) {
+            roleStr+=role.getId()+",";
+        }
+        System.out.println(roleStr);
+        request.setAttribute("user",user);
+        request.setAttribute("roleList",roleList);
+        request.setAttribute("userRoleStr",roleStr);
+        //到查询
+        return "system/user/user-role";
+    }
+
+    //更新用户角色
+
+    @RequestMapping(value = "/changeRole",name = "用户分配角色页面展示")
+    public String changeRole(String userid,String[] roleIds){
+
+        userService.changeRole(userid,roleIds);
+        //到查询
+        return "redirect:/system/user/list.do";
+    }
 }

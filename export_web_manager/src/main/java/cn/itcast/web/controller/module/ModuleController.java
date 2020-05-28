@@ -3,8 +3,9 @@ package cn.itcast.web.controller.module;
 import cn.itcast.domain.Module;
 import cn.itcast.service.ModuleService;
 import cn.itcast.utils.UtilFuns;
-import cn.itcast.web.controller.basecontroller.BaseController;
+import cn.itcast.web.controller.BaseController;
 import com.github.pagehelper.PageInfo;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,7 @@ public class ModuleController extends BaseController{
 
 
     @RequestMapping(value = "/list",name = "菜单查询")
+    @RequiresPermissions("模块管理")
     public String findPageAll(@RequestParam(defaultValue = "1") int pageNum, @RequestParam(defaultValue = "4")int pageSize){
         PageInfo page = moduleService.findAllPage(pageNum, pageSize);
         request.setAttribute("page",page);

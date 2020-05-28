@@ -24,4 +24,8 @@ public interface ModuleDao {
     List<Module> findAllPage();
 
     List<Module> findRoleModule(String id);
+
+    List<Module> FindByUserModule(String s);
+
+    List<Module> FindByUserModuleToRbac(String id);
 }

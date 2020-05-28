@@ -17,15 +17,14 @@ public interface CompanyDao {
 
     void deleteById(String id);
     /*
-     *    new map()
-     *       map.put("start",1)
-     *       map.put("pageSize",4)
-     *
-     * */
+    *    new map()
+    *       map.put("start",1)
+    *       map.put("pageSize",4)
+    *
+    * */
     List<Company> findList(@Param("start") int pageNum, @Param("pageSize") int pageSize);
 
     int findCount();
 
     List<Company> findPageList();
-
 }

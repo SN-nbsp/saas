@@ -21,25 +21,25 @@
 
         </resultMap>
 
-    <!--企业信息的查询-->
-    <select id="findAll" resultMap="companyResultMap">
+        <!--企业信息的查询-->
+        <select id="findAll" resultMap="companyResultMap">
             select * from ss_company
         </select>
 
-    <!--企业信息的添加-->
-    <insert id="save" parameterType="cn.itcast.domain.Company">
+       <!--企业信息的添加-->
+        <insert id="save" parameterType="cn.itcast.domain.Company">
             INSERT INTO ss_company(id, name, expiration_date, address, license_id, representative, phone, company_size, industry, remarks, state, balance, city)
             VALUE
             (#{id}, #{name}, #{expirationDate}, #{address}, #{licenseId}, #{representative}, #{phone}, #{companySize}, #{industry}, #{remarks}, #{state}, #{balance}, #{city} )
         </insert>
 
-    <!--根据id查询企业信息-->
-    <select id="findById" resultMap="companyResultMap" parameterType="string">
+        <!--根据id查询企业信息-->
+        <select id="findById" resultMap="companyResultMap" parameterType="string">
             select * from ss_company where id=#{id}
         </select>
 
-    <!--修改-->
-    <update id="update" parameterType="cn.itcast.domain.Company">
+        <!--修改-->
+        <update id="update" parameterType="cn.itcast.domain.Company">
             update ss_company set
             name=#{name},
             expiration_date=#{expirationDate},
@@ -56,22 +56,24 @@
             where id=#{id}
         </update>
 
-    <!--删除-->
-    <delete id="deleteById" parameterType="string">
+        <!--删除-->
+        <delete id="deleteById" parameterType="string">
             delete from ss_company where id=#{id}
         </delete>
 
-    <!--分页查询-->
-    <select id="findList" resultMap="companyResultMap" parameterType="map">
+        <!--分页查询-->
+        <select id="findList" resultMap="companyResultMap" parameterType="map">
             select * from ss_company limit #{start},#{pageSize}
         </select>
-    <!--分页总条数-->
-    <select id="findCount" resultType="int">
+        <!--分页总条数-->
+        <select id="findCount" resultType="int">
             select count(*) from ss_company
         </select>
 
-    <!--pageHelper插件的数据查询-->
-    <select id="findPageList" resultMap="companyResultMap">
+        <!--pageHelper插件的数据查询-->
+        <select id="findPageList" resultMap="companyResultMap">
             select * from ss_company
         </select>
+
+
 </mapper>

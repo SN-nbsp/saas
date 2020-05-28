@@ -20,7 +20,7 @@ public interface ModuleService {
     int update(Module module);
 
     //查询全部
-    PageInfo findAllPage(int pageNum, int pageSize);
+    PageInfo findAllPage(int pageNum,int pageSize);
 
     //查询所有菜单模块
     List<Module> findAllModule();

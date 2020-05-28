@@ -45,7 +45,6 @@
             <div class="box-body">
                 <form name="icform" method="post" >
                     <input type="hidden" name="userid" value="${user.id}"/>
-                    <input type="hidden" name="oldRoleIds" value="${userRoleStr}"/>
                     <div class="textbox" id="centerTextbox">
                             <div style="text-align:left">
                                 <c:set var="oldRoleIds" value=""/>

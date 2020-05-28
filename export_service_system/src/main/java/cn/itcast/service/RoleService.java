@@ -3,6 +3,8 @@ package cn.itcast.service;
 import cn.itcast.domain.Role;
 import com.github.pagehelper.PageInfo;
 
+import java.util.List;
+
 public interface RoleService {
 
     //查询全部用户
@@ -21,4 +23,9 @@ public interface RoleService {
     int update(Role role);
 
     void updateRoleModule(String roleId, String moduleId);
+
+    //查询所有的角色
+    List<Role> findAllRole(String companyId);
+
+    List<Role> findByUserRole(String id);
 }

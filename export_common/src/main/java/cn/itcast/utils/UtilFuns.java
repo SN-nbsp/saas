@@ -64,7 +64,7 @@ import java.util.*;
   
   //返回固定长度串，空白地方用空格填充 by tony 20110926
   public String fixSpaceStr(String str,int len){
-	  StringBuffer  sBuf = new StringBuffer();
+	  StringBuffer sBuf = new StringBuffer();
 	  try{
 		  if(str.length()>len){
 			  return str;

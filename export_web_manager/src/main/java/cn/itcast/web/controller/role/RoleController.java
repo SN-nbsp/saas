@@ -3,7 +3,7 @@ package cn.itcast.web.controller.role;
 import cn.itcast.domain.Role;
 import cn.itcast.service.RoleService;
 import cn.itcast.utils.UtilFuns;
-import cn.itcast.web.controller.basecontroller.BaseController;
+import cn.itcast.web.controller.BaseController;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

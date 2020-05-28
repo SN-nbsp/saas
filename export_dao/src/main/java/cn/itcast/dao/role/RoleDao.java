@@ -24,4 +24,6 @@ public interface RoleDao {
     void deleteByRoleId(String roleId);
 
     void saveRoleModule(@Param("roleId") String roleId, @Param("mId") String mId);
+
+    List<Role> findByUserRole(String id);
 }

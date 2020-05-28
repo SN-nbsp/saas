@@ -1,6 +1,7 @@
 package cn.itcast.dao.user;
 
 import cn.itcast.domain.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -16,4 +17,12 @@ public interface UserDao {
     void update(User user);
 
     void delete(String id);
+
+    void deleteUserRole(String userid);
+
+    void saveUserRole(@Param("userid") String userid, @Param("roleId")String roleId);
+
+    User findByEmail(String email);
+
+
 }

@@ -50,4 +50,12 @@ public class RoleServiceImpl implements RoleService {
         }
 
     }
+
+    public List<Role> findAllRole(String companyId) {
+        return roleDao.findAllPage(companyId);
+    }
+
+    public List<Role> findByUserRole(String id) {
+        return roleDao.findByUserRole(id);
+    }
 }

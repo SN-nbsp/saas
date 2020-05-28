@@ -71,4 +71,16 @@
         SELECT * FROM pe_role_module rm,ss_module m
         WHERE rm.module_id=m.module_id AND rm.role_id=#{id};
     </select>
+
+    <!--动态构造菜单数据-->
+    <select id="FindByUserModule" parameterType="string" resultMap="BaseResultMap">
+        select * from ss_module where belong=#{id}
+    </select>
+    <select id="FindByUserModuleToRbac" parameterType="string" resultMap="BaseResultMap">
+        SELECT * FROM ss_module WHERE module_id IN
+        (
+          SELECT DISTINCT module_id FROM pe_role_user pu,pe_role_module rm
+          WHERE pu.role_id=rm.role_id AND pu.user_id=#{id}
+        )
+    </select>
 </mapper>
